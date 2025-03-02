@@ -1,4 +1,4 @@
-# Restaurant Experience App Following Multi-tier Architecture
+# Restaurant Experience App following Multi-tier Architecture
 
 An enhancement over the cross-platform [restaurant app](https://github.com/blackbird-47/restaurant-exp-app) with React Native and Expo. Supports,
 1. Menu screen with prices.
