@@ -39,7 +39,7 @@ export default function App() {
   );
 
   const fetchData = async() => {
-    const response = await fetch(API_URL);
+      const response = await fetch(API_URL);
     const data = await response.json();
     const transformedData = data.menu.map(item => ({
       ...item,
@@ -62,12 +62,12 @@ export default function App() {
 
         const sectionListData = getSectionListData(menuItems);
         setData(sectionListData);
-        Alert.alert('Data fetched');
         console.log('Data fetched');
       } catch (e) {
+        console.error('Encountered an error:', e);
         Alert.alert(e.message);
       }
-    });
+    })();
   }, []);
 
   useUpdateEffect(() => {
